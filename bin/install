@@ -11,7 +11,7 @@ installer() {
     echo "The asdf-graalvm plugin only supports installing official"
     echo "binary releases as built by the graal team."
     echo "If you want to install another version from source, see:"
-    echo "https://github.com/oracle/graal/"
+    echo "https://github.com/graalvm/graalvm-ce-builds/"
     exit 1
   fi
 
@@ -102,7 +102,7 @@ download_url() {
   elif version_is_one $version; then
     echo "https://github.com/oracle/graal/releases/download/vm-${version}/graalvm-ce-${version}-${variant}.tar.gz"
   else
-    echo "https://github.com/oracle/graal/releases/download/vm-${version}/graalvm-ce-${variant}-${version}.tar.gz"
+    echo "https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-${version}/graalvm-ce-${variant}-${version}.tar.gz"
   fi
 }
 
